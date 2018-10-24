@@ -8,7 +8,8 @@ data class Contact(var firstName: String?,
               var mobile: String?,
               var landline: String?) : Parcelable {
 
-    val name: String = firstName + lastName
+    val name: String = "$firstName $lastName"
+    val email: String = "$firstName@spreys.com"
 
     constructor(parcel: Parcel) : this(
             parcel.readString(),
