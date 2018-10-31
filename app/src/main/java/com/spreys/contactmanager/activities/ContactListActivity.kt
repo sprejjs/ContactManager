@@ -1,8 +1,11 @@
-package com.spreys.contactmanager
+package com.spreys.contactmanager.activities
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.LinearLayoutManager
+import com.spreys.contactmanager.ContactsAdapter
+import com.spreys.contactmanager.MockDataGenerator
+import com.spreys.contactmanager.R
 import kotlinx.android.synthetic.main.activity_contact_list.*
 
 class ContactListActivity : AppCompatActivity() {

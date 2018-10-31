@@ -1,14 +1,18 @@
-package com.spreys.contactmanager
+package com.spreys.contactmanager.activities
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_contact_details.*
 import android.content.Intent
 import android.net.Uri
+import com.spreys.contactmanager.Contact
+import com.spreys.contactmanager.R
 
 
 class ContactDetailsActivity: AppCompatActivity() {
-    val EXTRA_CONTACT = "contact"
+    companion object {
+        val EXTRA_CONTACT = "contact"
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
