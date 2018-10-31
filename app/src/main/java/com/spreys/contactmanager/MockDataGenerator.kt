@@ -28,7 +28,7 @@ object MockDataGenerator {
     private val randomLandline: String
         get() = getRandomNumber(9)
 
-    fun getMockContacts(length: Int): List<Contact> {
+    fun getMockContacts(length: Int): ArrayList<Contact> {
         val mockContacts = ArrayList<Contact>()
         for (i in 0 until length) {
             mockContacts.add(mockContact)
