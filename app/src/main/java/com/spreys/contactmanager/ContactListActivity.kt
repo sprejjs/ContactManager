@@ -10,8 +10,9 @@ import android.view.View
 import android.view.ViewGroup
 import kotlinx.android.synthetic.main.activity_contact_list.*
 import kotlinx.android.synthetic.main.card_view.view.*
+import android.content.Intent
 
-class ContactList : AppCompatActivity() {
+class ContactListActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -40,7 +41,9 @@ class ContactList : AppCompatActivity() {
             holder.itemView.mobile_text_view.text = contact.mobile
 
             holder.itemView.setOnClickListener {
-                //TODO start a new Activity here
+                val intent = Intent(baseContext, ContactDetailsActivity::class.java)
+                intent.putExtra("contact", contact)
+                startActivity(intent)
             }
         }
 
