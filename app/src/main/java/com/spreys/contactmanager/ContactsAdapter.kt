@@ -6,6 +6,7 @@ import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.spreys.contactmanager.activities.ContactDetailsActivity
 import kotlinx.android.synthetic.main.card_view.view.*
 
 class ContactsAdapter(private val context: Context, private val contacts: List<Contact>) : RecyclerView.Adapter<ContactsAdapter.ViewHolder>() {

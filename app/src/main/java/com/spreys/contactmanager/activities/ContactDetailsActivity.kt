@@ -1,4 +1,4 @@
-package com.spreys.contactmanager
+package com.spreys.contactmanager.activities
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
