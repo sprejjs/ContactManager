@@ -1,8 +1,11 @@
-package com.spreys.contactmanager
+package com.spreys.contactmanager.adapters
 
 import android.support.v4.app.Fragment
 import android.support.v4.app.FragmentManager
 import android.support.v4.app.FragmentStatePagerAdapter
+import com.spreys.contactmanager.Contact
+import com.spreys.contactmanager.fragments.ContactGridFragment
+import com.spreys.contactmanager.fragments.ContactListFragment
 
 class ContactPagerAdapter(fm: FragmentManager, private val contacts: ArrayList<Contact>): FragmentStatePagerAdapter(fm){
     override fun getItem(position: Int): Fragment {

@@ -1,4 +1,4 @@
-package com.spreys.contactmanager
+package com.spreys.contactmanager.fragments
 
 import android.content.Intent
 import android.net.Uri
@@ -7,6 +7,9 @@ import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.spreys.contactmanager.Contact
+import com.spreys.contactmanager.R
+import com.spreys.contactmanager.activities.ContactDetailsActivity
 import kotlinx.android.synthetic.main.fragment_contact_details.*
 
 
