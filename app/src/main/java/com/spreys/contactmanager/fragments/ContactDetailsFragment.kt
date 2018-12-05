@@ -7,11 +7,10 @@ import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.spreys.contactmanager.data.Contact
 import com.spreys.contactmanager.R
 import com.spreys.contactmanager.activities.ContactDetailsActivity
+import com.spreys.contactmanager.data.Contact
 import kotlinx.android.synthetic.main.fragment_contact_details.*
-
 
 class ContactDetailsFragment : Fragment() {
 
@@ -49,6 +48,10 @@ class ContactDetailsFragment : Fragment() {
 
         activity_details_landline.setOnClickListener {
             dialNumber(contact.landline)
+        }
+
+        fragment_details_imageview.setOnClickListener {
+
         }
 
         activity_details_email.setOnClickListener {

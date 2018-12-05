@@ -7,11 +7,17 @@
     android:padding="16dp"
     android:weightSum="3">
 
+    <ImageView
+        android:id="@+id/fragment_details_imageview"
+        android:src="@drawable/button_add"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
     <TextView
         android:id="@+id/activity_details_name"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_height="wrap_content"
         android:gravity="center"
         android:textAppearance="?android:textAppearanceLarge"
         tools:text="Hermila Frazer" />
@@ -19,8 +25,8 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="1px"
-        android:layout_marginBottom="8dp"
         android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
         android:background="@android:color/darker_gray" />
 
     <LinearLayout
@@ -46,8 +52,8 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="1px"
-        android:layout_marginBottom="8dp"
         android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
         android:background="@android:color/darker_gray" />
 
     <LinearLayout
@@ -73,8 +79,8 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="1px"
-        android:layout_marginBottom="8dp"
         android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
         android:background="@android:color/darker_gray" />
 
     <LinearLayout
@@ -100,8 +106,8 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="1px"
-        android:layout_marginBottom="8dp"
         android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
         android:background="@android:color/darker_gray" />
 
 </LinearLayout>
