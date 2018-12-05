@@ -6,7 +6,7 @@ import android.support.v7.widget.LinearLayoutManager
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.spreys.contactmanager.Contact
+import com.spreys.contactmanager.data.Contact
 import com.spreys.contactmanager.adapters.ContactsAdapter
 import com.spreys.contactmanager.R
 import kotlinx.android.synthetic.main.recycler_view.*

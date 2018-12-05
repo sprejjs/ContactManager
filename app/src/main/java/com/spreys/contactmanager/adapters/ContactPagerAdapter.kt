@@ -3,7 +3,7 @@ package com.spreys.contactmanager.adapters
 import android.support.v4.app.Fragment
 import android.support.v4.app.FragmentManager
 import android.support.v4.app.FragmentStatePagerAdapter
-import com.spreys.contactmanager.Contact
+import com.spreys.contactmanager.data.Contact
 import com.spreys.contactmanager.fragments.ContactGridFragment
 import com.spreys.contactmanager.fragments.ContactListFragment
 

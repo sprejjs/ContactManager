@@ -6,7 +6,7 @@ import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.spreys.contactmanager.Contact
+import com.spreys.contactmanager.data.Contact
 import com.spreys.contactmanager.R
 import com.spreys.contactmanager.activities.ContactDetailsActivity
 import kotlinx.android.synthetic.main.card_view.view.*
@@ -24,7 +24,7 @@ class ContactsAdapter(private val context: Context, private val contacts: List<C
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val contact = contacts[position]
 
-        holder.itemView.name_text_view.text = contact.name
+        holder.itemView.name_text_view.text = contact.name()
         holder.itemView.mobile_text_view.text = contact.mobile
 
         holder.itemView.setOnClickListener {

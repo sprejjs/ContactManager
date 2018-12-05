@@ -1,4 +1,4 @@
-package com.spreys.contactmanager
+package com.spreys.contactmanager.data
 
 
 import java.util.ArrayList
@@ -9,7 +9,7 @@ object MockDataGenerator {
     private val lastNames = arrayOf("Stephen", "Granier", "Guild", "Frazer", "Jacobs", "Bassi", "Thies", "Gracey", "Kicklighter", "Klingman", "Spade", "Podesta", "Gatz", "Mineo", "Magda", "Coronado", "Hanks", "Ellington", "Barone", "Leibowitz", "Hileman", "Box", "Soileau", "Ament", "Bracken", "Gholston", "Eagles", "Roop", "Huber", "Carollo", "Seidl", "Rohrer", "Peach", "Monarrez", "Markey", "Sidwell", "Stoneham", "Pinkerton", "Westervelt", "Despres", "Belair", "Derksen", "Suzuki", "Distefano", "Montalto", "Jung", "Bratt", "Obrien", "Figueredo", "Keim")
 
     private val mockContact: Contact
-        get() = Contact(
+        get() = Contact(null,
                 randomFirstName,
                 randomLastName,
                 randomMobile,

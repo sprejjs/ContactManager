@@ -1,23 +1,31 @@
-package com.spreys.contactmanager
+package com.spreys.contactmanager.data
 
+import android.arch.persistence.room.ColumnInfo
+import android.arch.persistence.room.Entity
+import android.arch.persistence.room.PrimaryKey
 import android.os.Parcel
 import android.os.Parcelable
 
-data class Contact(var firstName: String?,
-              var lastName: String?,
-              var mobile: String?,
-              var landline: String?) : Parcelable {
+@Entity
+data class Contact(
+        @PrimaryKey(autoGenerate = true) var id: Long?,
+        @ColumnInfo var firstName: String?,
+        @ColumnInfo var lastName: String?,
+        @ColumnInfo var mobile: String?,
+        @ColumnInfo var landline: String?) : Parcelable {
 
-    val name: String = "$firstName $lastName"
-    val email: String = "$firstName@spreys.com"
+    fun name() = "$firstName $lastName"
+    fun email() = "$firstName@spreys.com"
 
     constructor(parcel: Parcel) : this(
+            parcel.readLong(),
             parcel.readString(),
             parcel.readString(),
             parcel.readString(),
             parcel.readString())
 
     override fun writeToParcel(parcel: Parcel, flags: Int) {
+        parcel.writeLong(id ?: -1)
         parcel.writeString(firstName)
         parcel.writeString(lastName)
         parcel.writeString(mobile)

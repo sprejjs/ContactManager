@@ -2,7 +2,7 @@ package com.spreys.contactmanager.activities
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
-import com.spreys.contactmanager.Contact
+import com.spreys.contactmanager.data.Contact
 import com.spreys.contactmanager.fragments.ContactDetailsFragment
 import com.spreys.contactmanager.R
 
